@@ -1,0 +1,20 @@
+
+public class School extends Building {
+
+	public School(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "School " + name;
+	}
+
+	@Override
+	public void accept(Visitor visitor) {
+		// TODO Auto-generated method stub
+		visitor.visitSchool(this);
+	}
+	
+}
